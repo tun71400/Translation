@@ -12,10 +12,12 @@ class ImageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-         var imageAdapter: ImageAdapter = ImageAdapter(applicationContext)
+
+
+         var imageAdapter: ImageAdapter = ImageAdapter(this)
          var dataList = mutableListOf<champData>()
 
-        champRecycler.layoutManager = GridLayoutManager(applicationContext,2)
+        champRecycler.layoutManager = GridLayoutManager(this,2)
         champRecycler.adapter = imageAdapter
 
         dataList.add(champData("Ahri","Mage that goes mid",R.drawable.ahri))
@@ -29,7 +31,6 @@ class ImageActivity : AppCompatActivity() {
         dataList.add(champData("Viego","Assassin that goes jungle",R.drawable.viego))
         dataList.add(champData("Yone","ADC that goes top",R.drawable.yone))
         imageAdapter.setDataList(dataList)
-
 
 
     }

@@ -1,5 +1,6 @@
 package edu.temple.imageactivityproject
 
+import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -16,7 +17,6 @@ class ImageAdapter(var context: Context) : RecyclerView.Adapter<ImageAdapter.Vie
         this.dataList = dataList
     }
 
-    // Provide a direct reference to each of the views with data items
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var image: ImageView
@@ -31,27 +31,26 @@ class ImageAdapter(var context: Context) : RecyclerView.Adapter<ImageAdapter.Vie
 
     }
 
-    // Usually involves inflating a layout from XML and returning the holder
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
-        // Inflate the custom layout
         var view = LayoutInflater.from(parent.context).inflate(R.layout.photo_layout, parent, false)
         return ViewHolder(view)
     }
 
-    // Involves populating data into the item through holder
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        // Get the data model based on position
         var data = dataList[position]
 
-        // Set item views based on your views and data model
         holder.title.text = data.title
         holder.desc.text = data.desc
 
         holder.image.setImageResource(data.image)
+
+        holder.image.setOnClickListener(){
+            (context as Activity).findViewById<ImageView>(R.id.mainImage).setImageResource(data.image)
+            (context as Activity).findViewById<TextView>(R.id.name).text = data.title
+        }
     }
 
-    //  total count of items in the list
     override fun getItemCount() = dataList.size
 }
