@@ -15,21 +15,21 @@ class ImageActivity : AppCompatActivity() {
 
 
          var imageAdapter: ImageAdapter = ImageAdapter(this)
-         var dataList = mutableListOf<champData>()
+         var dataList = mutableListOf<ChampData>()
 
         champRecycler.layoutManager = GridLayoutManager(this,2)
         champRecycler.adapter = imageAdapter
 
-        dataList.add(champData("Ahri","Mage that goes mid",R.drawable.ahri))
-        dataList.add(champData("Ashe","ADC that goes bottom",R.drawable.ashe))
-        dataList.add(champData("Dr. Mundo","Tank that goes top",R.drawable.dr_mundo))
-        dataList.add(champData("Garen","Tank that goes top",R.drawable.garen))
-        dataList.add(champData("Morgana","Support that goes bottom",R.drawable.morgana))
-        dataList.add(champData("Sett","Bruiser that goes top",R.drawable.sett))
-        dataList.add(champData("Shen","Tank that goes top",R.drawable.shen))
-        dataList.add(champData("Soraka","Support that goes bottom",R.drawable.soraka))
-        dataList.add(champData("Viego","Assassin that goes jungle",R.drawable.viego))
-        dataList.add(champData("Yone","ADC that goes top",R.drawable.yone))
+        dataList.add(ChampData("Ahri","Mage that goes mid",R.drawable.ahri))
+        dataList.add(ChampData("Ashe","ADC that goes bottom",R.drawable.ashe))
+        dataList.add(ChampData("Dr. Mundo","Tank that goes top",R.drawable.dr_mundo))
+        dataList.add(ChampData("Garen","Tank that goes top",R.drawable.garen))
+        dataList.add(ChampData("Morgana","Support that goes bottom",R.drawable.morgana))
+        dataList.add(ChampData("Sett","Bruiser that goes top",R.drawable.sett))
+        dataList.add(ChampData("Shen","Tank that goes top",R.drawable.shen))
+        dataList.add(ChampData("Soraka","Support that goes bottom",R.drawable.soraka))
+        dataList.add(ChampData("Viego","Assassin that goes jungle",R.drawable.viego))
+        dataList.add(ChampData("Yone","ADC that goes top",R.drawable.yone))
         imageAdapter.setDataList(dataList)
 
 
