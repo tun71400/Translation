@@ -10,10 +10,10 @@ class ActivitySecond : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        val title = intent.getStringExtra("title")
+        val name = intent.getStringExtra("title")
         val image = intent.getIntExtra("image", R.drawable.ahri)
 
         findViewById<ImageView>(R.id.imageView).setImageResource(image)
-        findViewById<TextView>(R.id.textView).text = title
+        findViewById<TextView>(R.id.textView).text = name
     }
 }

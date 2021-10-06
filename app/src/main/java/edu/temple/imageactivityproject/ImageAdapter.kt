@@ -51,14 +51,13 @@ class ImageAdapter(var context: Context) : RecyclerView.Adapter<ImageAdapter.Vie
         holder.image.setOnClickListener(){
 
             val intent = Intent(context, ActivitySecond::class.java).apply {
-                putExtra("title", data.title)
-                putExtra("image", data.image)
+                putExtra("title", data.title )
+                putExtra("image", data.image )
             }
             context.startActivity(intent)
 
 
             /* might need later
-
             (context as Activity).findViewById<ImageView>(R.id.mainImage).setImageResource(data.image)
             (context as Activity).findViewById<TextView>(R.id.name).text = data.title */
         }
