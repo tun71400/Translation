@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">ImageActivityProject</string>
+    <string name="infoText">Click an image below to view</string>
+    <string-array name="champs">
+        <item>Mage that goes mid</item>
+        <item>ADC that goes bottom</item>
+        <item>Tank that goes top</item>
+        <item>Tank that goes top</item>
+        <item>Support that goes bottom</item>
+        <item>Bruiser that goes top</item>
+        <item>Tank that goes top</item>
+        <item>Support that goes bottom</item>
+        <item>Assassin that goes jungle</item>
+        <item>ADC that goes top</item>
+    </string-array>
 </resources>
