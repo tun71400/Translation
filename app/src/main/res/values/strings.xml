@@ -13,4 +13,16 @@
         <item>Assassin that goes jungle</item>
         <item>ADC that goes top</item>
     </string-array>
+    <string-array name="champNames">
+        <item>Ahri</item>
+        <item>Ashe</item>
+        <item>Dr. Mundo</item>
+        <item>Garen</item>
+        <item>Morgana</item>
+        <item>Sett</item>
+        <item>Shen</item>
+        <item>Soraka</item>
+        <item>Viego</item>
+        <item>Yone</item>
+    </string-array>
 </resources>
