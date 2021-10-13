@@ -2,6 +2,7 @@ package edu.temple.imageactivityproject
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -15,6 +16,7 @@ class ImageActivity : AppCompatActivity() {
 
          val champs = resources.getStringArray(R.array.champs)
         val champNames = resources.getStringArray(R.array.champNames)
+        findViewById<TextView>(R.id.infoText).text = resources.getString(R.string.info)
 
          var imageAdapter: ImageAdapter = ImageAdapter(this)
          var dataList = mutableListOf<ChampData>()
