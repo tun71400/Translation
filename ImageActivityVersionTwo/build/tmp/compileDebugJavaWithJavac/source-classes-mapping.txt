@@ -1,0 +1,2 @@
+edu/temple/imageactivityproject/BuildConfig.java
+ edu.temple.imageactivityproject.BuildConfig
