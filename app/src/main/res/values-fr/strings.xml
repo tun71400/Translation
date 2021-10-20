@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">ImageActivityProject</string>
+    <string name="info">Cliquez sur une image ci-dessous pour voir</string>
+    <string-array name="champs">
+        <item>Mage qui va au milieu</item>
+        <item>ADC qui descend</item>
+        <item>Débardeur qui monte</item>
+        <item>Débardeur qui monte</item>
+        <item>Un soutien qui va en bas</item>
+        <item>Bruiser qui va en haut</item>
+        <item>Débardeur qui monte</item>
+        <item>Un soutien qui va en bas</item>
+        <item>Assassin qui va dans la jungle</item>
+        <item>ADC qui va en haut</item>
+    </string-array>
+    <string-array name="champNames">
+        <item>Ahri</item>
+        <item>Ashe</item>
+        <item>Dr. Mundo</item>
+        <item>Garen</item>
+        <item>Morgana</item>
+        <item>Sett</item>
+        <item>Shen</item>
+        <item>Soraka</item>
+        <item>Viego</item>
+        <item>Yone</item>
+    </string-array>
+</resources>
